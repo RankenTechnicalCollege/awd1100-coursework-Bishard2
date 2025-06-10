@@ -32,9 +32,9 @@
             this.btnPaper = new System.Windows.Forms.Button();
             this.btnScissors = new System.Windows.Forms.Button();
             this.lblComputer = new System.Windows.Forms.Label();
-            this.lblScore1 = new System.Windows.Forms.Label();
-            this.txtScore2 = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
+            this.lblRound = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRock
@@ -76,41 +76,41 @@
             this.lblComputer.TabIndex = 3;
             this.lblComputer.Text = "label1";
             // 
-            // lblScore1
+            // lblScore
             // 
-            this.lblScore1.AutoSize = true;
-            this.lblScore1.Location = new System.Drawing.Point(184, 202);
-            this.lblScore1.Name = "lblScore1";
-            this.lblScore1.Size = new System.Drawing.Size(35, 13);
-            this.lblScore1.TabIndex = 4;
-            this.lblScore1.Text = "label1";
-            // 
-            // txtScore2
-            // 
-            this.txtScore2.AutoSize = true;
-            this.txtScore2.Location = new System.Drawing.Point(305, 202);
-            this.txtScore2.Name = "txtScore2";
-            this.txtScore2.Size = new System.Drawing.Size(35, 13);
-            this.txtScore2.TabIndex = 5;
-            this.txtScore2.Text = "label2";
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(184, 202);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(35, 13);
+            this.lblScore.TabIndex = 4;
+            this.lblScore.Text = "label2";
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(184, 247);
+            this.lblResult.Location = new System.Drawing.Point(184, 282);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(35, 13);
             this.lblResult.TabIndex = 6;
-            this.lblResult.Text = "label3";
+            this.lblResult.Text = "label4";
+            // 
+            // lblRound
+            // 
+            this.lblRound.AutoSize = true;
+            this.lblRound.Location = new System.Drawing.Point(184, 245);
+            this.lblRound.Name = "lblRound";
+            this.lblRound.Size = new System.Drawing.Size(35, 13);
+            this.lblRound.TabIndex = 7;
+            this.lblRound.Text = "label3";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblRound);
             this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.txtScore2);
-            this.Controls.Add(this.lblScore1);
+            this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblComputer);
             this.Controls.Add(this.btnScissors);
             this.Controls.Add(this.btnPaper);
@@ -128,9 +128,9 @@
         private System.Windows.Forms.Button btnPaper;
         private System.Windows.Forms.Button btnScissors;
         private System.Windows.Forms.Label lblComputer;
-        private System.Windows.Forms.Label lblScore1;
-        private System.Windows.Forms.Label txtScore2;
+        private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label lblRound;
     }
 }
 
