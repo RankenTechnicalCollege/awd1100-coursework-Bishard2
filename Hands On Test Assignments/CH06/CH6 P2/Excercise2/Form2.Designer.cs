@@ -82,20 +82,20 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(137, 122);
+            this.lblError.Location = new System.Drawing.Point(137, 115);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(77, 13);
+            this.lblError.Size = new System.Drawing.Size(29, 13);
             this.lblError.TabIndex = 5;
-            this.lblError.Text = "Discount Code";
+            this.lblError.Text = "Error";
             // 
             // lblInvoice
             // 
             this.lblInvoice.AutoSize = true;
-            this.lblInvoice.Location = new System.Drawing.Point(57, 179);
+            this.lblInvoice.Location = new System.Drawing.Point(57, 169);
             this.lblInvoice.Name = "lblInvoice";
-            this.lblInvoice.Size = new System.Drawing.Size(31, 13);
-            this.lblInvoice.TabIndex = 10;
-            this.lblInvoice.Text = "Total";
+            this.lblInvoice.Size = new System.Drawing.Size(29, 13);
+            this.lblInvoice.TabIndex = 6;
+            this.lblInvoice.Text = "Error";
             // 
             // Form2
             // 

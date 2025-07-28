@@ -73,6 +73,18 @@ namespace Excersice1
         {
             _order.Clear();
             listBox.Items.Clear();
+
+            _smallCount = 0;
+            _mediumCount = 0;
+            _largeCount = 0;
+
+            lblSmallCount.Text = "$Small: 0";
+            lblMediumCount.Text = "$Medium: 0";
+            lblLargeCount.Text = "$Large: 0";
+
+            lblSubtotal.Text = "Subtotal: $0.00";
+            lblTax.Text = "Tax: $0.00";
+            lblTotal.Text = "Total: $0.00";
         }
         private void ShowInvoice()
         {

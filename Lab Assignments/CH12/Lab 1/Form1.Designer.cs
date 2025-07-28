@@ -1,4 +1,4 @@
-﻿namespace Lab1
+﻿namespace Lab_1
 {
     partial class Form1
     {
@@ -30,15 +30,15 @@
         {
             this.btnDefine = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDefineTerm = new System.Windows.Forms.TextBox();
-            this.lblUnknownTerm = new System.Windows.Forms.Label();
-            this.txtAddTerm = new System.Windows.Forms.TextBox();
+            this.txtTerm = new System.Windows.Forms.TextBox();
+            this.txtNewDef = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.lblDefinition = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDefine
             // 
-            this.btnDefine.Location = new System.Drawing.Point(335, 69);
+            this.btnDefine.Location = new System.Drawing.Point(316, 74);
             this.btnDefine.Name = "btnDefine";
             this.btnDefine.Size = new System.Drawing.Size(75, 23);
             this.btnDefine.TabIndex = 0;
@@ -49,54 +49,54 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(82, 55);
+            this.label1.Location = new System.Drawing.Point(73, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "What term do you want me to define?";
             // 
-            // txtDefineTerm
+            // txtTerm
             // 
-            this.txtDefineTerm.Location = new System.Drawing.Point(85, 71);
-            this.txtDefineTerm.Name = "txtDefineTerm";
-            this.txtDefineTerm.Size = new System.Drawing.Size(244, 20);
-            this.txtDefineTerm.TabIndex = 2;
+            this.txtTerm.Location = new System.Drawing.Point(76, 74);
+            this.txtTerm.Name = "txtTerm";
+            this.txtTerm.Size = new System.Drawing.Size(234, 20);
+            this.txtTerm.TabIndex = 2;
             // 
-            // lblUnknownTerm
+            // txtNewDef
             // 
-            this.lblUnknownTerm.AutoSize = true;
-            this.lblUnknownTerm.Location = new System.Drawing.Point(82, 111);
-            this.lblUnknownTerm.Name = "lblUnknownTerm";
-            this.lblUnknownTerm.Size = new System.Drawing.Size(76, 13);
-            this.lblUnknownTerm.TabIndex = 3;
-            this.lblUnknownTerm.Text = "Unknown term";
-            // 
-            // txtAddTerm
-            // 
-            this.txtAddTerm.Location = new System.Drawing.Point(85, 137);
-            this.txtAddTerm.Name = "txtAddTerm";
-            this.txtAddTerm.Size = new System.Drawing.Size(244, 20);
-            this.txtAddTerm.TabIndex = 5;
+            this.txtNewDef.Location = new System.Drawing.Point(76, 136);
+            this.txtNewDef.Name = "txtNewDef";
+            this.txtNewDef.Size = new System.Drawing.Size(234, 20);
+            this.txtNewDef.TabIndex = 4;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(335, 135);
+            this.btnAdd.Location = new System.Drawing.Point(316, 136);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 4;
+            this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // lblDefinition
+            // 
+            this.lblDefinition.AutoSize = true;
+            this.lblDefinition.Location = new System.Drawing.Point(73, 108);
+            this.lblDefinition.Name = "lblDefinition";
+            this.lblDefinition.Size = new System.Drawing.Size(31, 13);
+            this.lblDefinition.TabIndex = 5;
+            this.lblDefinition.Text = "Term";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtAddTerm);
+            this.Controls.Add(this.lblDefinition);
+            this.Controls.Add(this.txtNewDef);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.lblUnknownTerm);
-            this.Controls.Add(this.txtDefineTerm);
+            this.Controls.Add(this.txtTerm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDefine);
             this.Name = "Form1";
@@ -110,10 +110,10 @@
 
         private System.Windows.Forms.Button btnDefine;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDefineTerm;
-        private System.Windows.Forms.Label lblUnknownTerm;
-        private System.Windows.Forms.TextBox txtAddTerm;
+        private System.Windows.Forms.TextBox txtTerm;
+        private System.Windows.Forms.TextBox txtNewDef;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblDefinition;
     }
 }
 
