@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EX1
 {
-    internal class Password
+    public class Password
     {
         private string _raw;
         private string _hash;
@@ -17,14 +17,7 @@ namespace EX1
             _hash = hash;
         }
 
-        public string Raw
-        {
-            get { return _raw; }
-        }
-
-        public string Hash
-        {
-            get { return _hash; }
-        }
+        public string Raw => _raw;
+        public string Hash => _hash;
     }
 }
