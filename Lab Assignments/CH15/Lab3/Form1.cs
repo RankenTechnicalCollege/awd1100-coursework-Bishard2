@@ -19,8 +19,17 @@ namespace Lab3
         public Form1()
         {
             InitializeComponent();
-            pictures = new PictureBox[] { picCard1, picCard2, picCard3, picCard4, picCard5, picCard6, picCard7, picCard8, picCard9, picCard10 };
-            labels = new Label[] { lblCard1, lblCard2, lblCard3, lblCard4, lblCard5, lblCard6, lblCard7, lblCard8, lblCard9, lblCard10 };
+            pictures = new PictureBox[]
+            {
+                picCard1, picCard2, picCard3, picCard4, picCard5,
+                picCard6, picCard7, picCard8, picCard9, picCard10
+            };
+
+            labels = new Label[]
+            {
+                lblCard1, lblCard2, lblCard3, lblCard4, lblCard5,
+                lblCard6, lblCard7, lblCard8, lblCard9, lblCard10
+            };
         }
         private void btnOpen_Click(object sender, EventArgs e)
         {
@@ -48,7 +57,17 @@ namespace Lab3
                 boosterPack.Add(card);
             }
 
-            boosterPack.Sort();
+            boosterPack.Sort((a, b) =>
+            {
+                bool aShiny = a is ShinyCard;
+                bool bShiny = b is ShinyCard;
+
+                if (aShiny != bShiny)
+                    return aShiny ? 1 : -1;
+
+                if (a is IComparable ia) return ia.CompareTo(b);
+                return 0;
+            });
 
             for (int i = 0; i < 10; i++)
             {
@@ -58,7 +77,10 @@ namespace Lab3
 
         private string GetRandomPokemonName()
         {
-            string[] names = { "Bulbasaur", "Charmander", "Squirtle", "Caterpie", "Weedle", "Pidgey", "Rattata", "Ekans", "Pikachu", "Vulpix", "Zubat", "Diglett" };
+            string[] names = {
+                "Bulbasaur", "Charmander", "Squirtle", "Caterpie",
+                "Weedle", "Pidgey", "Rattata", "Ekans"
+            };
             return names[rnd.Next(names.Length)];
         }
 
